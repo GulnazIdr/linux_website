@@ -6,7 +6,7 @@
 </head>
 <body>
     <h2>Register</h2>
-    <form method="POST" action="action.php">
+    <form method="post" action="action.php">
         <label for="name">Name:</label>
 
         <input type="text" id="name" name="name" required />
