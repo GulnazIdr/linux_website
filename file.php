@@ -1,5 +1,9 @@
 <?php
+try{
 $file = fopen("text.txt", "w");
+}catch(Exception $ex){
+	 echo 'Исключение: ' . $ex->getMessage();
+}
 echo fwrite($file, "hello everybody"); /*1*/
 
 rename ("text.txt", "mir.txt") or die ("Ошибка переименования файла");
